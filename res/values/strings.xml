@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string name="app_name">电话号码归属地查询</string>
+<string name="mobile_phone_number">请输入固话或者十一位手机号码</string>
+<string name="search">查询</string>
+<string name="confirm">确认</string>
+<string name="phone_number_error">号码格式不正确</string>
+<string name="provider">运营商： </string>
+<string name="area">地区： </string>
+<string name="not_found">对不起，查询不到这个号码</string>
+<string name="pstn">固定电话</string>
+</resources>

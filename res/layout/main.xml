@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.bingo.phone_number_search"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+
+    <FrameLayout
+		android:id="@+id/ads_frame1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">	
+	</FrameLayout>
+		
+	<ScrollView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/ads_frame1"
+		android:scrollbarStyle="outsideInset">
+		
+		<LinearLayout	  
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<EditText 
+				android:id="@+id/mobile"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:layout_gravity="center_vertical"
+			    android:hint="@string/mobile_phone_number"
+				android:maxLines="1"
+				android:inputType="phone"
+				android:selectAllOnFocus="true"
+				android:focusable="true"/>
+			    
+			<Button
+				android:id="@+id/search"
+				android:layout_height="wrap_content" 
+			    android:text="@string/search"
+				android:layout_width="fill_parent"/>
+				
+			<TextView
+				android:id="@+id/provider"
+				android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:layout_gravity="center_vertical"
+				android:textSize="24dip"/>	
+				
+			<LinearLayout
+				android:id="@+id/details"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true">
+				
+				<TextView
+				android:id="@+id/area"
+				android:layout_width="200dip" 
+			    android:layout_height="wrap_content" 
+			    android:layout_gravity="bottom"
+			    android:autoLink="all"
+			    android:textSize="24dip"
+				android:linksClickable="true"/>	
+						
+				<ImageButton
+					android:id="@+id/go_to"	
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="invisible"
+					android:background="@drawable/maps"/>								
+			</LinearLayout>	
+		</LinearLayout>
+	</ScrollView>		
+	<FrameLayout
+		android:id="@+id/ads_frame2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">	
+	</FrameLayout>
+
+</RelativeLayout>
